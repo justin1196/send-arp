@@ -17,7 +17,7 @@ Ip::operator std::string() const {
 		(ip_ & 0xFF000000) >> 24,
 		(ip_ & 0x00FF0000) >> 16,
 		(ip_ & 0x0000FF00) >> 8,
-		(ip_ & 0x000000FF));
+                (ip_ & 0x000000FF));
 	return std::string(buf);
 }
 
